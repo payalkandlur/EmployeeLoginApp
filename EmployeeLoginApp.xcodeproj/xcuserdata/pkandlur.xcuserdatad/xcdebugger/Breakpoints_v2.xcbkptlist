@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2AB1A9E1-D2E8-4736-9866-C419109F68B4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F361EA21-3E2F-4554-8925-F941F7AABAF1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/View/ViewControllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "LoginViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56602E9D-DD2E-4461-8C16-F961B450E6AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/NetworkService/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "post(withBaseURL:body:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B11CDD2F-840C-49AD-BEBB-ADB16B1B33AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/NetworkService/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "post(withBaseURL:body:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B11CDD2F-840C-49AD-BEBB-ADB16B1B33AB - ef62a2d478046307"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeeLoginApp.NetworkService.post(withBaseURL: Swift.String, body: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, completion: (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;EmployeeLoginApp.ServerError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EmployeeLoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pkandlur/Projects/EmployeeLoginApp/EmployeeLoginApp/NetworkService/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "2665">
+               </Location>
+               <Location
+                  uuid = "B11CDD2F-840C-49AD-BEBB-ADB16B1B33AB - a05080bc772afd91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in EmployeeLoginApp.NetworkService.post(withBaseURL: Swift.String, body: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, completion: (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;EmployeeLoginApp.ServerError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EmployeeLoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pkandlur/Projects/EmployeeLoginApp/EmployeeLoginApp/NetworkService/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "237">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6B9F272-D62E-4CE7-8B6F-EF1699717B88"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/NetworkService/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "post(withBaseURL:body:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E425757D-FEB0-4BA8-A720-E7C237586422"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/Store/UserListStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "getUserList(callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E425757D-FEB0-4BA8-A720-E7C237586422 - bd10439e857abb58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeeLoginApp.UserListStore.getUserList(callback: (Swift.Optional&lt;EmployeeLoginApp.Page&gt;, Swift.Optional&lt;EmployeeLoginApp.ServerError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EmployeeLoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pkandlur/Projects/EmployeeLoginApp/EmployeeLoginApp/Store/UserListStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "E425757D-FEB0-4BA8-A720-E7C237586422 - 4396773f3a749911"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;EmployeeLoginApp.ServerError&gt;) -&gt; () in EmployeeLoginApp.UserListStore.getUserList(callback: (Swift.Optional&lt;EmployeeLoginApp.Page&gt;, Swift.Optional&lt;EmployeeLoginApp.ServerError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EmployeeLoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pkandlur/Projects/EmployeeLoginApp/EmployeeLoginApp/Store/UserListStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5349FC2-D6FB-481B-8891-14D9F2821358"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/Model/UserModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "Page"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "C5349FC2-D6FB-481B-8891-14D9F2821358 - 5c563b9b2c5beac3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeeLoginApp.Page.init(page: Swift.Optional&lt;Swift.Int&gt;, per_page: Swift.Optional&lt;Swift.Int&gt;, total: Swift.Optional&lt;Swift.Int&gt;, total_pages: Swift.Optional&lt;Swift.Int&gt;, data: Swift.Optional&lt;Swift.Array&lt;EmployeeLoginApp.User&gt;&gt;) -&gt; EmployeeLoginApp.Page"
+                  moduleName = "EmployeeLoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pkandlur/Projects/EmployeeLoginApp/EmployeeLoginApp/Model/UserModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "C5349FC2-D6FB-481B-8891-14D9F2821358 - 6bbb41771b4db702"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeeLoginApp.Page.init() -&gt; EmployeeLoginApp.Page"
+                  moduleName = "EmployeeLoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pkandlur/Projects/EmployeeLoginApp/EmployeeLoginApp/Model/UserModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "150">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F08965A6-174B-428A-8EFF-88894ECB9E83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/Store/UserListStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "UserListStore"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E35B8FF2-CED0-46A8-B56C-10B0E93E9F0F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/View/ViewControllers/UserListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4216A6B3-1DFA-45C5-B50A-E8F378BCEB26"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/View/ViewControllers/UserListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B6365BBA-493F-4E7B-A148-7B33E2DDF4DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeLoginApp/View/ViewControllers/UserListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

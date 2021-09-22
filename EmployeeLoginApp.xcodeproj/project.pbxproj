@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		632CF8C026FB16E800DF64F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8BF26FB16E800DF64F2 /* AppDelegate.swift */; };
 		632CF8C226FB16E900DF64F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8C126FB16E900DF64F2 /* SceneDelegate.swift */; };
-		632CF8C426FB16E900DF64F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8C326FB16E900DF64F2 /* ViewController.swift */; };
+		632CF8C426FB16E900DF64F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8C326FB16E900DF64F2 /* LoginViewController.swift */; };
 		632CF8C726FB16E900DF64F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632CF8C526FB16E900DF64F2 /* Main.storyboard */; };
 		632CF8CA26FB16E900DF64F2 /* EmployeeLoginApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8C826FB16E900DF64F2 /* EmployeeLoginApp.xcdatamodeld */; };
 		632CF8CC26FB16EC00DF64F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632CF8CB26FB16EC00DF64F2 /* Assets.xcassets */; };
 		632CF8CF26FB16EC00DF64F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632CF8CD26FB16EC00DF64F2 /* LaunchScreen.storyboard */; };
 		632CF8DA26FB16EC00DF64F2 /* EmployeeLoginAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8D926FB16EC00DF64F2 /* EmployeeLoginAppTests.swift */; };
 		632CF8E526FB16EC00DF64F2 /* EmployeeLoginAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8E426FB16EC00DF64F2 /* EmployeeLoginAppUITests.swift */; };
+		632CF8FC26FB271000DF64F2 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8FB26FB271000DF64F2 /* CommonUtils.swift */; };
+		632CF8FE26FB280300DF64F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8FD26FB280300DF64F2 /* Constants.swift */; };
+		632CF90026FB28B100DF64F2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF8FF26FB28B100DF64F2 /* NetworkService.swift */; };
+		632CF90226FB290200DF64F2 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF90126FB290200DF64F2 /* ServerError.swift */; };
+		632CF90426FB2CCD00DF64F2 /* LoginStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF90326FB2CCD00DF64F2 /* LoginStore.swift */; };
+		632CF90626FB2F2300DF64F2 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF90526FB2F2300DF64F2 /* LoginManager.swift */; };
+		632CF90826FB2FCD00DF64F2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF90726FB2FCD00DF64F2 /* LoginViewModel.swift */; };
+		632CF90A26FB300A00DF64F2 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF90926FB300A00DF64F2 /* Dynamic.swift */; };
+		632CF90C26FB35A100DF64F2 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF90B26FB35A100DF64F2 /* UserListViewController.swift */; };
+		632CF90F26FB362E00DF64F2 /* UserCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF90D26FB362E00DF64F2 /* UserCardTableViewCell.swift */; };
+		632CF91026FB362E00DF64F2 /* UserCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632CF90E26FB362E00DF64F2 /* UserCardTableViewCell.xib */; };
+		632CF91226FB3B8100DF64F2 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF91126FB3B8100DF64F2 /* UserListViewModel.swift */; };
+		632CF91426FB3C3400DF64F2 /* UserListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF91326FB3C3400DF64F2 /* UserListManager.swift */; };
+		632CF91626FB3C6400DF64F2 /* UserListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF91526FB3C6400DF64F2 /* UserListStore.swift */; };
+		632CF91826FB3E0400DF64F2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF91726FB3E0400DF64F2 /* UserModel.swift */; };
+		632CF91A26FB677A00DF64F2 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF91926FB677A00DF64F2 /* UserDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +55,7 @@
 		632CF8BC26FB16E800DF64F2 /* EmployeeLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632CF8BF26FB16E800DF64F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632CF8C126FB16E900DF64F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		632CF8C326FB16E900DF64F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		632CF8C326FB16E900DF64F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		632CF8C626FB16E900DF64F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		632CF8C926FB16E900DF64F2 /* EmployeeLoginApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmployeeLoginApp.xcdatamodel; sourceTree = "<group>"; };
 		632CF8CB26FB16EC00DF64F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +67,22 @@
 		632CF8E026FB16EC00DF64F2 /* EmployeeLoginAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeeLoginAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632CF8E426FB16EC00DF64F2 /* EmployeeLoginAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeLoginAppUITests.swift; sourceTree = "<group>"; };
 		632CF8E626FB16EC00DF64F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632CF8FB26FB271000DF64F2 /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		632CF8FD26FB280300DF64F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		632CF8FF26FB28B100DF64F2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		632CF90126FB290200DF64F2 /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		632CF90326FB2CCD00DF64F2 /* LoginStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStore.swift; sourceTree = "<group>"; };
+		632CF90526FB2F2300DF64F2 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		632CF90726FB2FCD00DF64F2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		632CF90926FB300A00DF64F2 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		632CF90B26FB35A100DF64F2 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		632CF90D26FB362E00DF64F2 /* UserCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardTableViewCell.swift; sourceTree = "<group>"; };
+		632CF90E26FB362E00DF64F2 /* UserCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCardTableViewCell.xib; sourceTree = "<group>"; };
+		632CF91126FB3B8100DF64F2 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		632CF91326FB3C3400DF64F2 /* UserListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListManager.swift; sourceTree = "<group>"; };
+		632CF91526FB3C6400DF64F2 /* UserListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListStore.swift; sourceTree = "<group>"; };
+		632CF91726FB3E0400DF64F2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		632CF91926FB677A00DF64F2 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +133,16 @@
 		632CF8BE26FB16E800DF64F2 /* EmployeeLoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				632CF8FA26FB26FE00DF64F2 /* Helper */,
+				632CF8F726FB171D00DF64F2 /* Store */,
+				632CF8F626FB171500DF64F2 /* Manager */,
+				632CF8F526FB170900DF64F2 /* NetworkService */,
+				632CF8F426FB170000DF64F2 /* ViewModel */,
+				632CF8F326FB16FA00DF64F2 /* View */,
+				632CF8F226FB16F200DF64F2 /* Model */,
 				632CF8BF26FB16E800DF64F2 /* AppDelegate.swift */,
 				632CF8C126FB16E900DF64F2 /* SceneDelegate.swift */,
-				632CF8C326FB16E900DF64F2 /* ViewController.swift */,
-				632CF8C526FB16E900DF64F2 /* Main.storyboard */,
 				632CF8CB26FB16EC00DF64F2 /* Assets.xcassets */,
-				632CF8CD26FB16EC00DF64F2 /* LaunchScreen.storyboard */,
 				632CF8D026FB16EC00DF64F2 /* Info.plist */,
 				632CF8C826FB16E900DF64F2 /* EmployeeLoginApp.xcdatamodeld */,
 			);
@@ -129,6 +165,90 @@
 				632CF8E626FB16EC00DF64F2 /* Info.plist */,
 			);
 			path = EmployeeLoginAppUITests;
+			sourceTree = "<group>";
+		};
+		632CF8F226FB16F200DF64F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				632CF91726FB3E0400DF64F2 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		632CF8F326FB16FA00DF64F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				632CF8F926FB174E00DF64F2 /* ViewControllers */,
+				632CF8F826FB174400DF64F2 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		632CF8F426FB170000DF64F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				632CF90926FB300A00DF64F2 /* Dynamic.swift */,
+				632CF90726FB2FCD00DF64F2 /* LoginViewModel.swift */,
+				632CF91126FB3B8100DF64F2 /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		632CF8F526FB170900DF64F2 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				632CF8FF26FB28B100DF64F2 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		632CF8F626FB171500DF64F2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				632CF90526FB2F2300DF64F2 /* LoginManager.swift */,
+				632CF91326FB3C3400DF64F2 /* UserListManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		632CF8F726FB171D00DF64F2 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				632CF90326FB2CCD00DF64F2 /* LoginStore.swift */,
+				632CF91526FB3C6400DF64F2 /* UserListStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		632CF8F826FB174400DF64F2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				632CF8C526FB16E900DF64F2 /* Main.storyboard */,
+				632CF8CD26FB16EC00DF64F2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		632CF8F926FB174E00DF64F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				632CF8C326FB16E900DF64F2 /* LoginViewController.swift */,
+				632CF90B26FB35A100DF64F2 /* UserListViewController.swift */,
+				632CF91926FB677A00DF64F2 /* UserDetailsViewController.swift */,
+				632CF90D26FB362E00DF64F2 /* UserCardTableViewCell.swift */,
+				632CF90E26FB362E00DF64F2 /* UserCardTableViewCell.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		632CF8FA26FB26FE00DF64F2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				632CF8FB26FB271000DF64F2 /* CommonUtils.swift */,
+				632CF8FD26FB280300DF64F2 /* Constants.swift */,
+				632CF90126FB290200DF64F2 /* ServerError.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +356,7 @@
 			files = (
 				632CF8CF26FB16EC00DF64F2 /* LaunchScreen.storyboard in Resources */,
 				632CF8CC26FB16EC00DF64F2 /* Assets.xcassets in Resources */,
+				632CF91026FB362E00DF64F2 /* UserCardTableViewCell.xib in Resources */,
 				632CF8C726FB16E900DF64F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +382,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632CF8C426FB16E900DF64F2 /* ViewController.swift in Sources */,
+				632CF8C426FB16E900DF64F2 /* LoginViewController.swift in Sources */,
+				632CF8FC26FB271000DF64F2 /* CommonUtils.swift in Sources */,
 				632CF8C026FB16E800DF64F2 /* AppDelegate.swift in Sources */,
 				632CF8C226FB16E900DF64F2 /* SceneDelegate.swift in Sources */,
+				632CF91226FB3B8100DF64F2 /* UserListViewModel.swift in Sources */,
+				632CF91426FB3C3400DF64F2 /* UserListManager.swift in Sources */,
 				632CF8CA26FB16E900DF64F2 /* EmployeeLoginApp.xcdatamodeld in Sources */,
+				632CF90626FB2F2300DF64F2 /* LoginManager.swift in Sources */,
+				632CF90426FB2CCD00DF64F2 /* LoginStore.swift in Sources */,
+				632CF90226FB290200DF64F2 /* ServerError.swift in Sources */,
+				632CF90C26FB35A100DF64F2 /* UserListViewController.swift in Sources */,
+				632CF8FE26FB280300DF64F2 /* Constants.swift in Sources */,
+				632CF90A26FB300A00DF64F2 /* Dynamic.swift in Sources */,
+				632CF91A26FB677A00DF64F2 /* UserDetailsViewController.swift in Sources */,
+				632CF90826FB2FCD00DF64F2 /* LoginViewModel.swift in Sources */,
+				632CF91626FB3C6400DF64F2 /* UserListStore.swift in Sources */,
+				632CF90F26FB362E00DF64F2 /* UserCardTableViewCell.swift in Sources */,
+				632CF91826FB3E0400DF64F2 /* UserModel.swift in Sources */,
+				632CF90026FB28B100DF64F2 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
