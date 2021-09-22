@@ -14,7 +14,8 @@ class UserListViewModel {
     var userList: [User]?
     var errorMessage = ""
     
-
+    //MARK: Get the user details
+    /// This function will get the user data from.
     func getUserList() {
         UserListViewManager.sharedInstance.getUserList { [weak self]
             (result, error)  in

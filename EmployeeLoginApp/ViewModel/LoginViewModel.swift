@@ -15,6 +15,11 @@ class LoginViewModel: NSObject {
     
     var token = ""
     
+    //MARK: POst the login details
+    /// This function will post the login data from.
+    ///
+    /// - Parameters:
+    ///        - body: Dictionary object containing email and password.
     func postLoginData(_ loginBody: Dictionary<String, String>?) {
         LoginManager.sharedInstance.postLoginData(loginBody) { [weak self]
             (result, error)  in
@@ -31,7 +36,7 @@ class LoginViewModel: NSObject {
         }
     }
     
-    //Chceks if username and password is entered
+    ///Chceks if username and password is entered
     func isLoginValid(_ password: String, _ email: String) -> Bool {
         if !email.isEmpty || !password.isEmpty {
             return true

@@ -12,6 +12,10 @@ class UserListViewManager {
     
     static let sharedInstance =  UserListViewManager()
     
+    /// This function will make the get request for the user details.
+    ///
+    /// - Parameters:
+    ///        - callback: A callback  with the parameters `result` having the data and `error` which is a ServerError object.
     func getUserList(callback:@escaping (_ result:Page?, _ error:ServerError?) -> Void) {
         UserListStore.sharedInstance.getUserList() {
             (result, error) in

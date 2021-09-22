@@ -11,6 +11,11 @@ class LoginStore {
     
     static let sharedInstance = LoginStore()
     
+    /// This function will make the post request, and post the login body
+    ///
+    /// - Parameters:
+    ///        - callback: A callback  with the parameters `result` having the token and `error` which is a ServerError object.
+    ///        - body: Dictionary object containing email and password.
     func postLoginData(_ body: Dictionary<String, String>?, callback:@escaping (_ result: String?, _ error:ServerError?) -> Void) {
         NetworkService.sharedInstance.post(withBaseURL: NetworkConstants.loginAPI, body: body) {
             (result, error) in

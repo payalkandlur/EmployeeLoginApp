@@ -11,6 +11,10 @@ class UserListStore {
     
     static let sharedInstance = UserListStore()
     
+    /// This function will make the get request for the user details.
+    ///
+    /// - Parameters:
+    ///        - callback: A callback  with the parameters `result` having the data and `error` which is a ServerError object.
     func getUserList(callback:@escaping (_ result: Page?, _ error:ServerError?) -> Void) {
         NetworkService.sharedInstance.get(withBaseURL: NetworkConstants.userAPI) {
             (result, error) in

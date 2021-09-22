@@ -12,12 +12,7 @@ struct ServerError {
     var error:NSError?
     var errorCode: Int
     var errorMessage: String?
-    
-    /// This is the init for Server Error
-    ///
-    /// - Parameters:
-    ///     - err: NSError Object
-    ///     - customErrorMessage: Error Message
+
     init(err:NSError, customErrorMessage: String? = nil) {
         self.error = err
         self.errorCode = err.code

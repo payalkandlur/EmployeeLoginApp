@@ -17,7 +17,7 @@ class NetworkService {
     /// - Parameters:
     ///     - withBaseURL: the base url of the API call
     ///     - params: params to be passed in the call in form of dictionary
-    ///     - completion: callback with AnyObject and Error Object
+    ///     - completion: callback with Data and Server Object
     func get(withBaseURL: String,
              params : [String : String]? = nil,
              completion: @escaping (_ result:Data?,_ error:ServerError?) -> Void) {
@@ -49,6 +49,7 @@ class NetworkService {
         }
     }
     
+    //MARK: POST
     /// This is the POST call through URL Session
     ///
     /// - Parameters:
