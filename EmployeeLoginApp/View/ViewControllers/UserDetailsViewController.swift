@@ -47,6 +47,7 @@ class UserDetailsViewController: UIViewController {
         self.imgView.layer.cornerRadius = 20
     }
     
+    ///NavBar items handled
     func navBar() {
         self.navigationController?.navigationBar.isHidden = false
         self.navigationItem.hidesBackButton = false

@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    ///This function applies UI changes if any.
     func applyTheme() {
         self.loginButton.layer.cornerRadius = 5
     }
@@ -94,6 +95,8 @@ class LoginViewController: UIViewController {
         UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
     
+    ///This function checks if the username and password are valid and
+    ///proceeds to post the login data as json to the backend.
     func loginIfValid() {
         guard let email = emailTextfield.text, let password = passwordTextfield.text else {
             return
@@ -117,6 +120,7 @@ class LoginViewController: UIViewController {
     }
 }
 
+//MARK: TextField delegates
 extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

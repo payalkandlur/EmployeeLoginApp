@@ -29,6 +29,7 @@ class UserListViewController: UIViewController, UITableViewDelegate, UITableView
         self.navBar()
     }
     
+    ///NavBar items handled.
     func navBar() {
         self.navigationController?.navigationBar.isHidden = false
         self.navigationItem.hidesBackButton = true

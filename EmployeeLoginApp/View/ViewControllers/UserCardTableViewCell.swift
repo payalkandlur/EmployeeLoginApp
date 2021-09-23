@@ -23,9 +23,10 @@ class UserCardTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        applyTheme()
+        self.applyTheme()
     }
     
+    ///Apply UI changes if any.
     func applyTheme() {
         self.cardView.layer.cornerRadius = 5
         self.imgView.layer.borderWidth = 0.2
