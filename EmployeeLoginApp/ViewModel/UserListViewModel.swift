@@ -9,6 +9,7 @@ import UIKit
 
 class UserListViewModel {
 
+    let userManager = UserListViewManager()
     
     var isGetListSuccess: Dynamic<Bool> = Dynamic(false)
     var userList: [User]?
@@ -17,7 +18,7 @@ class UserListViewModel {
     //MARK: Get the user details
     /// This function will get the user data from.
     func getUserList() {
-        UserListViewManager.sharedInstance.getUserList { [weak self]
+        userManager.getUserList { [weak self]
             (result, error)  in
             if error == nil {
                 if let data = result?.data {

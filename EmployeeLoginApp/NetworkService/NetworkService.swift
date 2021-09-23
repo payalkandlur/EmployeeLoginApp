@@ -8,9 +8,7 @@
 import Foundation
 
 class NetworkService {
-    
-    static let sharedInstance = NetworkService()
-        
+            
     //MARK: GET
     /// This is the GET call through URL Session
     ///

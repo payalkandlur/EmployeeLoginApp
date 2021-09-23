@@ -9,14 +9,14 @@ import Foundation
 
 class UserListStore {
     
-    static let sharedInstance = UserListStore()
+    let networkService = NetworkService()
     
     /// This function will make the get request for the user details.
     ///
     /// - Parameters:
     ///        - callback: A callback  with the parameters `result` having the data and `error` which is a ServerError object.
     func getUserList(callback:@escaping (_ result: Page?, _ error:ServerError?) -> Void) {
-        NetworkService.sharedInstance.get(withBaseURL: NetworkConstants.userAPI) {
+        networkService.get(withBaseURL: "https://reqres.in/api/users") {
             (result, error) in
             let decoder = JSONDecoder()
             if error == nil {

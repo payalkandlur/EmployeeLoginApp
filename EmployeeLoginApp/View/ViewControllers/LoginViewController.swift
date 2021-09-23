@@ -31,6 +31,9 @@ class LoginViewController: UIViewController {
         self.registerViewModelListeners()
         self.applyTheme()
         self.hideKeyboardWhenTappedAround()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func applyTheme() {
@@ -57,24 +60,15 @@ class LoginViewController: UIViewController {
     
     ///This function handles the screen when the keyboard appears.
     @objc func keyboardWillShow(_ notification: Notification) {
-        if let keyboardHeight = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.height {
-            let contentInsets : UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardHeight, right: 0.0)
-            scrollView.contentInset = contentInsets
+        guard let keyboardFrameValue = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue else {
+            return
         }
+        let keyboardFrame = view.convert(keyboardFrameValue.cgRectValue, from: nil)
+        scrollView.contentOffset = CGPoint(x:0, y:keyboardFrame.size.height/2)
     }
     ///This function handles the screen when the keyboard is dismissed.
     @objc func keyboardWillHide(_ notification: Notification) {
-        if let keyboardHeight = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.height {
-            let contentInsets : UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: -keyboardHeight + 300, right: 0.0)
-            scrollView.contentInset = contentInsets
-        }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:UIResponder.keyboardWillHideNotification, object: nil)
+        scrollView.contentOffset = .zero
     }
     
   
@@ -86,7 +80,8 @@ class LoginViewController: UIViewController {
                 self.showUserList()
                 
             } else {
-                CommonUtils.sharedInstance.showAlert(header: ErrorConstants.defaultErrorHeader, message: StringConstants.textFieldValidation, actionTitle: StringConstants.alertOK)
+                CommonUtils.sharedInstance.hideActivityIndicator()
+                CommonUtils.sharedInstance.showAlert(header: ErrorConstants.defaultErrorHeader, message: ErrorConstants.internetError, actionTitle: StringConstants.alertOK)
             }
         }
     }
@@ -97,18 +92,14 @@ class LoginViewController: UIViewController {
         let navController = UINavigationController(rootViewController: vc)
         UIApplication.shared.windows.first?.rootViewController = navController
         UIApplication.shared.windows.first?.makeKeyAndVisible()
-        
-        
-        
     }
     
     func loginIfValid() {
         guard let email = emailTextfield.text, let password = passwordTextfield.text else {
             return
         }
-        
         if (viewModel.isLoginValid(password, email)) {
-            if password == StringConstants.password && email == StringConstants.email  {
+            if password == StringConstants.pswd && email == StringConstants.email  {
                 CommonUtils.sharedInstance.showActivityIndicator(self.view)
                 
                 var jsonBody = Dictionary<String, String>()

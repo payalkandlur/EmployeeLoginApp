@@ -29,13 +29,13 @@ struct ServerError {
         
         switch self.errorCode {
         case 0:
-            self.errorMessage = ErrorConstants.defaultError
+            self.errorMessage = NSLocalizedString("DEFAULT_ERROR", comment: "")
         case -1009:
-            self.errorMessage = ErrorConstants.internetError
+            self.errorMessage = NSLocalizedString("INTERNET_ERROR", comment: "")
         case 400:
-            self.errorMessage = ErrorConstants.defaultError
+            self.errorMessage = NSLocalizedString("DEFAULT_ERROR", comment: "")
         default:
-            self.errorMessage = ErrorConstants.defaultError
+            self.errorMessage = NSLocalizedString("DEFAULT_ERROR", comment: "")
         }
     }
     

@@ -9,7 +9,7 @@ import Foundation
 
 class LoginStore {
     
-    static let sharedInstance = LoginStore()
+    let networkService = NetworkService()
     
     /// This function will make the post request, and post the login body
     ///
@@ -17,7 +17,7 @@ class LoginStore {
     ///        - callback: A callback  with the parameters `result` having the token and `error` which is a ServerError object.
     ///        - body: Dictionary object containing email and password.
     func postLoginData(_ body: Dictionary<String, String>?, callback:@escaping (_ result: String?, _ error:ServerError?) -> Void) {
-        NetworkService.sharedInstance.post(withBaseURL: NetworkConstants.loginAPI, body: body) {
+        networkService.post(withBaseURL: "https://reqres.in/api/login", body: body) {
             (result, error) in
             if error == nil {
                 if let resultDict = result as? [String: Any] {

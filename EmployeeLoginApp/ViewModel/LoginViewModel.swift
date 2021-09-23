@@ -9,7 +9,7 @@ import UIKit
 
 class LoginViewModel: NSObject {
     
-    static let sharedInstance = LoginViewModel()
+    let loginManager = LoginManager()
     var isLoginSuccess: Dynamic<Bool> = Dynamic(false)
     var errorMessage = ""
     
@@ -21,7 +21,7 @@ class LoginViewModel: NSObject {
     /// - Parameters:
     ///        - body: Dictionary object containing email and password.
     func postLoginData(_ loginBody: Dictionary<String, String>?) {
-        LoginManager.sharedInstance.postLoginData(loginBody) { [weak self]
+        loginManager.postLoginData(loginBody) { [weak self]
             (result, error)  in
             if error == nil {
                 if let token = result {
